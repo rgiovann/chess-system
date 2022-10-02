@@ -26,10 +26,6 @@ public class Position {
 		this.col = col;
 	}
 
-	public Position() {
-		// TODO Auto-generated constructor stub
-	}
-	
 	@Override
 	public String toString() {
 		return row + ", " + col;

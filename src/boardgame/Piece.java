@@ -4,6 +4,7 @@ public class Piece {
 
 	protected Position position;
 	private Board board;
+	
 	public Piece( Board board) {
 		this.position = null;
 		this.board = board;
@@ -13,9 +14,6 @@ public class Piece {
 	}
 	protected Board getBoard() {
 		return board;
-	}
-	public Piece() {
-		// TODO Auto-generated constructor stub
 	}
 
 }
