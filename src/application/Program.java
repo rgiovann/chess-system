@@ -34,11 +34,11 @@ public class Program {
 				
 				ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 			}
-			catch(ChessException e) {
+			catch(ChessException e) {                  // erro de dominio 
 				System.out.println(e.getLocalizedMessage());
 				sc.nextLine();
 			}
-			catch(InputMismatchException e) {
+			catch(InputMismatchException e) {         // erro de tipo de entrada de dados
 				System.out.println(e.getLocalizedMessage());
 				sc.nextLine();
 			}

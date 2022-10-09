@@ -3,6 +3,7 @@ package application;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import chess.ChessException;
 import chess.ChessPiece;
 import chess.ChessPosition;
 import chess.Color;
@@ -46,11 +47,18 @@ public class UI {
 			int  row    = Integer.parseInt(s.substring(1));
 			return new ChessPosition(column, row);
 			}
+		catch (ChessException e)
+		{
+			//e.printStackTrace();
+			throw new InputMismatchException(e.getMessage());
+		}		
 		catch (RuntimeException e)
 		{
 			//e.printStackTrace();
-			throw new InputMismatchException("Error reading ChessPosition. Valid values are from a1 to h8");
+			throw new InputMismatchException("Error reading source/target parameters.First character must be a letter [a...h], second character must be a number [1...8]");
 		}
+		
+		
 		
 	}
 
