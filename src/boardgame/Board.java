@@ -50,7 +50,7 @@ public class Board {
 		piece.position = position;
 	}
 	
-	public Piece removPiece(Position position) 
+	public Piece removePiece(Position position) 
 	{
 		if(!positionExists(position))
 		{
