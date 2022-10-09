@@ -22,8 +22,13 @@ public class Position {
 		return col;
 	}
 
-	public void setcol(int col) {
+	public void setCol(int col) {
 		this.col = col;
+	}
+	
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.col = column;
 	}
 
 	@Override
